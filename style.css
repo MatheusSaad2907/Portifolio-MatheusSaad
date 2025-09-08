@@ -1,100 +1,25 @@
-/* From Uiverse.io by kennyotsu */
-.card {
-    /* color used to softly clip top and bottom of the .words container */
-    --bg-color: #111;
-    background-color: var(--bg-color);
-    padding: 1rem 2rem;
-    border-radius: 1.25rem;
-}
+/* =========================
+   PERFIL (Foto de Perfil)
+   ========================= */
 
-.loader {
-    color: rgb(124, 124, 124);
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 25px;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-    height: 40px;
-    padding: 10px 1px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border-radius: 8px;
-}
-
-.words {
+.foto-perfil {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
     overflow: hidden;
-    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
 }
 
-.words::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(var(--bg-color) 10%,
-            transparent 30%,
-            transparent 70%,
-            var(--bg-color) 90%);
-    z-index: 20;
-}
-
-.word {
-    display: block;
-    height: 100%;
-    padding-left: 6px;
-    color: #956afa;
-    animation: spin_4991 7s infinite;
-}
-
-@keyframes spin_4991 {
-    0% {
-        -webkit-transform: translateY(-0%);
-        transform: translateY(0%);
-    }
-
-    14% {
-        -webkit-transform: translateY(-100%);
-        transform: translateY(-100%);
-    }
-
-    28% {
-        -webkit-transform: translateY(-200%);
-        transform: translateY(-200%);
-    }
-
-    42% {
-        -webkit-transform: translateY(-300%);
-        transform: translateY(-300%);
-    }
-
-    56% {
-        -webkit-transform: translateY(-400%);
-        transform: translateY(-400%);
-    }
-
-    70% {
-        -webkit-transform: translateY(-500%);
-        transform: translateY(-500%);
-    }
-
-    84% {
-        -webkit-transform: translateY(-600%);
-        transform: translateY(-600%);
-    }
-
-    100% {
-        -webkit-transform: translateY(-600%);
-        transform: translateY(-600%);
-    }
-}
-
-
-
+/* =========================
+   TÍTULO
+   ========================= */
 /* From Uiverse.io by Praashoo7 */
 #titulo {
-
-
-
+    /* Estilos para o título podem ser adicionados aqui */
+    /* Os estilos de social estão dentro do escopo do título */
     /* From Uiverse.io by mooosakhan */
     .card {
         width: fit-content;
@@ -112,7 +37,7 @@
         margin-right: auto;
     }
 
-    /* for all social containers*/
+    /* Para todos containers sociais */
     .socialContainer {
         width: 52px;
         height: 52px;
@@ -125,19 +50,19 @@
         transition-duration: 0.3s;
     }
 
-    /* instagram*/
+    /* Instagram */
     .containerOne:hover {
         background-color: #d62976;
         transition-duration: 0.3s;
     }
 
-    /* linkdin*/
+    /* Linkedin */
     .containerThree:hover {
         background-color: #0072b1;
         transition-duration: 0.3s;
     }
 
-    /* Whatsapp*/
+    /* Whatsapp */
     .containerFour:hover {
         background-color: #128c7e;
         transition-duration: 0.3s;
@@ -171,23 +96,111 @@
             opacity: 1;
         }
     }
-
 }
 
+/* =========================
+   TEXTO DO TÍTULO
+   ========================= */
+.text-body-emphasis {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 45px;
+}
 
-.foto-perfil {
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
+/* =========================
+   CARDS DE APRESENTAÇÃO
+   ========================= */
+/* From Uiverse.io by kennyotsu */
+.card {
+    /* cor usada para suavizar o corte do topo e fundo do container .words */
+    --bg-color: #111;
+    background-color: var(--bg-color);
+    padding: 1rem 2rem;
+    border-radius: 1.25rem;
+}
+
+/* Loader animado */
+.loader {
+    color: rgb(124, 124, 124);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 40px;
+    padding: 10px 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
+    border-radius: 8px;
 }
 
+/* Palavras animadas */
+.words {
+    overflow: hidden;
+    position: relative;
+}
 
+.words::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(var(--bg-color) 10%,
+            transparent 30%,
+            transparent 70%,
+            var(--bg-color) 90%);
+    z-index: 20;
+}
 
+.word {
+    display: block;
+    height: 100%;
+    padding-left: 6px;
+    color: #956afa;
+    animation: spin_4991 7s infinite;
+}
+
+@keyframes spin_4991 {
+    0% {
+        -webkit-transform: translateY(-0%);
+        transform: translateY(0%);
+    }
+    14% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    28% {
+        -webkit-transform: translateY(-200%);
+        transform: translateY(-200%);
+    }
+    42% {
+        -webkit-transform: translateY(-300%);
+        transform: translateY(-300%);
+    }
+    56% {
+        -webkit-transform: translateY(-400%);
+        transform: translateY(-400%);
+    }
+    70% {
+        -webkit-transform: translateY(-500%);
+        transform: translateY(-500%);
+    }
+    84% {
+        -webkit-transform: translateY(-600%);
+        transform: translateY(-600%);
+    }
+    100% {
+        -webkit-transform: translateY(-600%);
+        transform: translateY(-600%);
+    }
+}
+
+/* =========================
+   BOTÃO "Back to Top"
+   ========================= */
 /* From Uiverse.io by vinodjangid07 */
 .button {
     width: 50px;
@@ -207,7 +220,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-
 }
 
 .svgIcon {
@@ -250,255 +262,249 @@
     transition-duration: 0.3s;
 }
 
-
-
-/* From Uiverse.io by aguerquin */ 
+/* =========================
+   BOTÃO CUBO ANIMADO
+   ========================= */
+/* From Uiverse.io by aguerquin */
 .button-icon {
-  display: flex;
-  border: 3px #fff solid;
-  width: fit-content;
-  height: fit-content;
-  cursor: pointer;
-  margin-left: auto;
+    display: flex;
+    border: 3px #fff solid;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    margin-left: auto;
     margin-right: auto;
-
 }
 
 .icon {
-  background-color: #fff;
-  padding: 10px 10px 5px 10px;
+    background-color: #fff;
+    padding: 10px 10px 5px 10px;
 }
 
 .icon svg {
-  width: 25px;
-  height: 25px;
+    width: 25px;
+    height: 25px;
 }
 
 .cube {
-  transition: all 0.4s;
-  transform-style: preserve-3d;
-  width: 200px;
-  height: 20px;
+    transition: all 0.4s;
+    transform-style: preserve-3d;
+    width: 200px;
+    height: 20px;
 }
 
 .button-icon:hover {
-  border-color: #ff98a2;
+    border-color: #ff98a2;
 }
 
 .button-icon:hover .cube {
-  transform: rotateX(90deg);
+    transform: rotateX(90deg);
 }
 
 .side {
-  position: absolute;
-  height: 47px;
-  width: 200px;
-  display: flex;
-  font-size: 0.8em;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-weight: bold;
+    position: absolute;
+    height: 47px;
+    width: 200px;
+    display: flex;
+    font-size: 0.8em;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
 }
 
 .top {
-  background: #ff98a2;
-  color: #fff;
-  transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
+    background: #ff98a2;
+    color: #fff;
+    transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
 }
 
 .front {
-  background: #222229;
-  color: #fff;
-  transform: translate3d(0, 0, 1em);
+    background: #222229;
+    color: #fff;
+    transform: translate3d(0, 0, 1em);
 }
 
-/* From Uiverse.io by TISEPSE */ 
+/* =========================
+   BOTÃO ANIMADO (btn2)
+   ========================= */
+/* From Uiverse.io by TISEPSE */
 .btn2 {
-  position: relative;
-  display: inline-block;
-  padding: 15px 30px;
-  border: 2px solid #fefefe;
-  text-transform: uppercase;
-  color: #fefefe;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 20px;
-  transition: 0.3s;
-  background-color: transparent;
-  cursor: pointer;
-  margin-left: auto;
- margin-right: auto;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #fefefe;
+    text-transform: uppercase;
+    color: #fefefe;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.3s;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn2::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  width: calc(100% + 6px);
-  height: calc(100% + 2px);
-  background-color: #212529;
-  transition: 0.3s ease-out;
-  transform: scaleY(1);
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 6px);
+    height: calc(100% + 2px);
+    background-color: #212529;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
 }
 
 .btn2::after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  width: calc(100% + 4px);
-  height: calc(100% - 50px);
-  background-color: #212529;
-  transition: 0.3s ease-out;
-  transform: scaleY(1);
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 50px);
+    background-color: #212529;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
 }
 
 .btn2:hover::before {
-  transform: translateY(-25px);
-  height: 0;
+    transform: translateY(-25px);
+    height: 0;
 }
 
 .btn2:hover::after {
-  transform: scaleX(0);
-  transition-delay: 0.15s;
+    transform: scaleX(0);
+    transition-delay: 0.15s;
 }
 
 .btn2:hover {
-  border: 2px solid #fefefe;
+    border: 2px solid #fefefe;
 }
 
 .btn2 .spn2 {
-  position: relative;
-  z-index: 3;
-  text-decoration: none;
-  border: none;
-  background-color: transparent;
+    position: relative;
+    z-index: 3;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
 }
 
-
-/* From Uiverse.io by TanimMahbub */ 
+/* =========================
+   WRAPPER E TOOLTIP
+   ========================= */
+/* From Uiverse.io by TanimMahbub */
 .wrapper {
-  display: flex;
-  gap: 10px;
-  font-family: monospace;
-  justify-content: center;
-  margin-bottom: 100px;
-
+    display: flex;
+    gap: 10px;
+    font-family: monospace;
+    justify-content: center;
+    margin-bottom: 100px;
 }
 
 .wrapper > div {
-  text-align: center;
-    
+    text-align: center;
 }
 
 .wrapper > div + div {
-  border-inline-start: 1px solid #d6cfcf;
-  padding-inline-start: 15px;
+    border-inline-start: 1px solid #d6cfcf;
+    padding-inline-start: 15px;
 }
 
 .wrapper > div > p {
-  margin-top: 15px;
-  max-width: 200px;
+    margin-top: 15px;
+    max-width: 200px;
 }
 
 .wrapper a {
-  display: inline-flex;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  justify-content: center;
-  align-items: center;
-  background-color: #191919;
-  color: white;
-  position: relative;
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #191919;
+    color: white;
+    position: relative;
 }
 
 .data-tooltip::before,
 .data-tooltip::after {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  transform: translateY(5px);
-  transition: all 0.2s ease;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: all 0.2s ease;
 }
 
 .data-tooltip::before {
-  content: attr(data-tooltip-content);
-  width: fit-content;
-  font-size: small;
-  font-weight: 600;
-  background-color: inherit;
-  padding: 3px 10px;
-  border-radius: 4px;
-  bottom: calc(100% + 5px);
+    content: attr(data-tooltip-content);
+    width: fit-content;
+    font-size: small;
+    font-weight: 600;
+    background-color: inherit;
+    padding: 3px 10px;
+    border-radius: 4px;
+    bottom: calc(100% + 5px);
 }
 
 .data-tooltip::after {
-  content: "";
-  border-top: 5px solid #191919;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  bottom: calc(100% + 1px);
+    content: "";
+    border-top: 5px solid #191919;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    bottom: calc(100% + 1px);
 }
 
 .data-tooltip:hover::before,
 .data-tooltip:hover::after {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .span-tooltip > i {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .span-tooltip > span {
-  position: absolute;
-  width: fit-content;
-  font-size: small;
-  font-weight: 600;
-  background-color: inherit;
-  padding: 3px 10px;
-  border-radius: 4px;
-  bottom: 100%;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.2s ease;
+    position: absolute;
+    width: fit-content;
+    font-size: small;
+    font-weight: 600;
+    background-color: inherit;
+    padding: 3px 10px;
+    border-radius: 4px;
+    bottom: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease;
 }
 
 .span-tooltip > span::before {
-  position: absolute;
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-radius: 3px;
-  background-color: inherit;
-  transform: rotate(45deg);
-  top: calc(100% - 6px);
-  left: 40%;
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    background-color: inherit;
+    transform: rotate(45deg);
+    top: calc(100% - 6px);
+    left: 40%;
 }
 
 .span-tooltip > i:hover + span {
-  visibility: visible;
-  opacity: 1;
-  bottom: calc(100% + 6px);
+    visibility: visible;
+    opacity: 1;
+    bottom: calc(100% + 6px);
 }
-
-
-
-.text-body-emphasis{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 700;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-top: 80px;
     margin-bottom: 45px;
 }
 
